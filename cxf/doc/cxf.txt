@@ -1,0 +1,41 @@
+Apache CXF
+
+参考教程: http://blog.csdn.net/longshengguoji/article/details/41450177
+
+Apache CXF是一个开源的Service框架，可以简化用户的service开发，基于CXF开发的应用可提供
+SOAP、XML/HTTP、RESTFULL HTTP 或 CORBA等服务. CXF底层可以使用不同的传输协议，包括
+HTTP、JMS或JBI等.
+CXF包含一下特性:
+1) 支持大量的WebService标准，包括SOAP、WS-I Basic Profile、WSDL、WS-Addressing、WS-Policy、
+WS-ReliableMessaging和WS-Security.
+2) 支持大量的前端编程模型，CXF实现了标准的JAX-WS API，也包括一种被称为简单前端的模型，这种
+模型无需注解支持.
+3) 支持 ws的2种开发模式: 
+A. 规则优先的开发模式，即通过编写WSDL来开发ws. 
+B. 代码优先的开发模式，即通过java代码来开发ws.
+
+
+javax.jws注解
+javax.jws.WebService 声明服务，用在类上
+javax.jws.WebMethod 声明方法，用在方法上
+javax.jws.WebResult 声明返回值，用在方法上
+javax.jws.WebParam 声明参数，用在方法上
+
+CXF客户端
+客户端通过持有ws服务的接口，来访问ws服务，通过CXF 提供的JaxWsProxyFactoryBean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
